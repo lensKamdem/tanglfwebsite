@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
+    <title>TANG Law Firm</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,31 +18,40 @@
     
   </head>
   <body>
-    <div class="container">
-      <div id="info-bar" class="row navbar">
-        <div class="col-sm-auto mr-auto">
+    <!--
+      App Header
+    -->
+    <header class="fixed-top">
+        <div  id="info-bar" class="container">
+      <div class="row">
+        <div class="info-bar">
+        <div class="col-sm-auto mr-auto hc">
           <span>Adocates and solicitators of the Cameroon Bar Association</span>
         </div>
-        <div class="col-sm-auto">
-          <span>Phone: </span>
-          <span>...</span>
+        <div class="col-sm-auto hc">
+          Phone:
+          <span>+237 222 221 136</span>
         </div>
-        <div class="col-sm-auto">
-          <span>Email: </span>
-          <span>...</span>
+        <div class="col-sm-auto hc">
+          Email:
+          <span>tanglawfirm@tang-lawfirm.net</span>
         </div>
         <a class="btn btn-link col-sm-auto" href="#">Contact Us</a>
       </div>
+      </div>
     </div>
 
-      <nav id="App-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="app-bar" class="navbar navbar-expand-lg">
         <div class="container">
-        <a class="navbar-brand" href="#">TANG</a>
+        <a class="navbar-brand" href="#">
+          <img src="img/tanglogo.png" alt="tang logo" />
+          TANG Law Firm
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
@@ -51,7 +60,7 @@
                 <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="#">Practice Area</a>
+                <a class="nav-link" href="#">Interventions</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="#">Team</a>
@@ -62,10 +71,11 @@
           </ul>
         </div>
         </div>
-      </nav>
+     </nav>
+    </header>
 
-      <main>
-          <div id="carouselExampleCaptions" class="carousel  carousel-fade" data-ride="carousel">
+    <main>
+      <div id="carouselExampleCaptions" class="carousel  carousel-fade" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -75,23 +85,34 @@
                 <div class="carousel-item active">
                   <img src="img/tl5.jpeg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    
+                    <h4>Tang Law Firm</h4>
+                    <span class="cp-cap"></span>
+                    <p>As a decisive actor of sustainable development, <br/>
+                        Tang Law Firm
+                        offers you a complete
+                        variety of services in business law
+                      </p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="img/tl4.jpeg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
+                      
+                      <h4>A Professional Firm you Can trust</h4>
+                      <span class="cp-cap"></span>
+                      <p>Your legal solution start here!</p>
+                    </div>
                 </div>
                 <div class="carousel-item">
                   <img src="img/tl2.jpeg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                  </div>
+                      
+                      <h4>Benefit from the great Experience</h4>
+                      <span class="cp-cap"></span>
+                      <p>Get quality experts with more than 20 years of experiences <br/>
+                         to handle your legal needs </p>
+                    </div>
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -102,14 +123,20 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
-            </div> 
+      </div> 
 
-            <div class="container">
-              <section class="my-5">
+  <!--
+    Contact Now Area
+  -->            
+      <section id="contact-now" class="">
+        <div class="container">
+            <div class="row">
                 <div class="">
-                  <span>Need a Legal Assistant</span>
+                  <h3>Need a Legal Assistant</h3>
                 </div>
-                <form class="form-row align-items-center my-4 justify-content-center">
+              </div>
+              <div class="row justify-content-center">
+                <form class="cnt-now-form form-row align-items-center">
                   <div class="col-auto">
                     <label class="sr-only" for="inlineFormInputName2">Name</label>
                     <input type="text" class="form-control" id="inlineFormInputName2" placeholder="Name">
@@ -128,237 +155,422 @@
                   </div>
 
                     <div class="col-auto">
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary cbtn">Submit</button>
                   </div>
                   </form>
-                </section>
-
-                <section class="my-5">
-                  <div class="row">
-                  <div class="">
-                    <span>...</span>
-                    <h2>WELCOME TO TANG</h2>
-                    <p>fjoufoe hiuyeurh poklfdfh uo oi uid yeofo pifkdfp ifio dpfi
-                       dfpiofipe  opifdpofiep opdifpoioi
-                    </p>
-                  </div>
-                  </div>
-
-                  <div class="row">
-                  <div class="col-sm">
-                    <h3>...</h3>
-                    <span></span>
-                    <p>fjoufoe hiuyeurh poklfdfh uo oi uid yeofo pifkdfp ifio dpfi
-                        dfpiofip e  dpofiep opdifpoioi
-                        fjoufoe hiuyeurh poklfdfh uo oi uid yeofo pifkdfp ifio dpfi
-                        dfpiofipe  opifdpofiep opdifpoioi</p>
-                  </div>
-                  <div class="col-sm">
-                      <h3>...</h3>
-                      <span></span>
-                      <p>fjoufoe hiuyeurh poklfdfh uo oi uid yeofo pifkdfp ifio dpfi
-                          dfpiofipe  dpofiep opdifpoioi
-                          fjoufoe hiuyeurh poklfdfh uo oi uid yeofo pifkdfp ifio dpfi
-                          dfpiofipe  opifdpofiep opdifpoioi</p>
-                    </div>
                 </div>
-                  <div class="row d-flex flex-column align-items-center">
-                    <a href="#" class="btn btn-outline-primary">More about TANG...</a>
-                  </div>
-                </section>
+        </div>
+      </section>
 
-                <section class="my-5">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <img class="d-block w-100 h-100" src="img/tl1.jpeg" />
-                    </div>
-                    <div class="col-sm px-5">
-                      <h2>...</h2>
-                      <p>idufoidjf opf pifpp pipr pifp ipfi pupirpie ipi-ripe jfljd ouerpi ljo
-                        ljdfljdlj ljdfpouip  ueoyryeur i pidupei uoiuu reuoue iyo 
+      <!--
+        Welcome Area
+      -->
+      <section id="welcome" class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="title-area">
+                <h3>Hello Dear</h3>
+                <h2>WELCOME TO TANG</h2>
+                <p>Tang Law Firm provides a full range of legal services,
+                   in French and English to various clients.
+                </p>
+              </div>
+            </div>
+          </div>
+                <div class="row mb-3">
+                  <div class="col-sm">
+                    <div class="welcome-content">
+                      <h3>
+                        Story 
+                        <br/> & History
+                        <span>O1.</span>
+                      </h3>
+                      <p>Founded in 1986, TANG Law Firm is located
+                          in Yaounde, Republic of Cameroon.
+                          It regroups about fifteen profesionals :
+                          Lawyers, specialised Jurists and administra-
+                          tive personnel.
                       </p>
-                      <div class="row">
-                        <div class="col-sm d-flex">
-                          <span class="fas fa-gavel mx-5"></span>
-                          <div class="">
-                          <h3>....</h3>
-                          <p>oiu erpeur hyng to do in this time 
-                            very diffucltt the will be a 
-                          </p>
-                          </div>
-                        </div>
-                        <div class="col-sm d-flex">
-                          <span class="fas fa-gavel mx-5"></span>
-                          <div class="">
-                          <h3>....</h3>
-                          <p>oiu erpeur hyng to do in this time 
-                            very diffucltt the will be a 
-                          </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm">
-                        <h3>Main Types of Interventions</h3>
-                        <ul>
-                          <li>
-                            <span class="fas fa-camera"></span>
-                            <span>Consulting</span>
-                          </li>
-                          <li>
-                              <span class="fas fa-camera"></span>
-                              <span>Consulting</span>
-                          </li>
-                          <li>
-                              <span class="fas fa-camera"></span>
-                              <span>Consulting</span>
-                            </li>
-                            <li>
-                                <span class="fas fa-camera"></span>
-                                <span>Consulting</span>
-                              </li>
-                              <li>
-                                  <span class="fas fa-camera"></span>
-                                  <span>Consulting</span>
-                                </li>
-                        </ul>
-                      </div>
-                      </div>
                     </div>
                   </div>
-
-                </section>
-
-                <section class="my-5">
-                  <div class="row">
-                    <div class="mr-auto">
-                        <span>...</span>
-                        <h2>Domaine of Intervention</h2>
-                        <p>fjoufoe hiuyeurh poklfdfh uo oi uid yeofo pifkdfp 
+                  <div class="col-sm">
+                      <div class="welcome-content">
+                        <h3>
+                          Values 
+                          <br/> & Philosophy
+                          <span>O2.</span>
+                        </h3>
+                        <p>Tang Law Firm is founded on the principles of truth and 
+                           wisdom. Our success has been the result
+                            of each attorney and staff members.
                         </p>
-                    </div>
-                    <div class="">
-                      <a href="#" class="btn btn-outline-primary">View All...</a>
-                    </div>
+                      </div>
                   </div>
-                  <div class="row mt-5">
-                    <div class="d-flex flex-column align-items-center">
-                      <span class="fas fa-tshirt"></span>
-                      <h3>Family Law</h3>
-                      <p>this can not reala tur or elll y</p>
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <span class="fas fa-tshirt"></span>
-                        <h3>Family Law</h3>
-                        <p>this can not reala ture it will y</p>
-                      </div>
-                      <div class="d-flex flex-column align-items-center">
-                          <span class="fas fa-tshirt"></span>
-                          <h3>Family Law</h3>
-                          <p>this can not reala tur  it will y</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-center">
-                            <span class="fas fa-tshirt"></span>
-                            <h3>Family Law</h3>
-                            <p>this can not reala tur or t will y</p>
-                          </div>
-                          <div class="d-flex flex-column align-items-center">
-                              <span class="fas fa-tshirt"></span>
-                              <h3>Family Law</h3>
-                              <p>this can not reala tur or else y</p>
-                            </div>
-                  </div>
-                </section>
-
-                <section id="" class="">
-                    <div id="" class="row">
-                    <div class="mr-auto">
-                        <span>...</span>
-                        <h2>Meet our Attorneys</h2>
-                        <p>fjoufoe hiuyeurh poklfdfh uo oi uid yeofo pifkdfp 
-                        </p>
-                    </div>
-                    <div class="">
-                      <a a href="#" class="btn btn-outline-primary">View All...</a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-3 d-flex flex-column align-items-center">
-                      <img class="d-block w-100" src="img/tl2.jpeg" alt="" />
-                      <span class="mt-3">Emmanuel Tang</span>
-                      <span class="">Spécialiste en Droit des Affaires</span>
-                      <hr class="mt-3" />
-                    </div>
-                    <div class="col-sm-3 d-flex flex-column align-items-center">
-                        <img class="d-block w-100" src="img/tl2.jpeg" alt="" />
-                        <span class="mt-3">Emmanuel Tang</span>
-                        <span class="">Spécialiste en Droit des Affaires</span>
-                        <hr class="mt-3" />
-                      </div>
-                      <div class="col-sm-3 d-flex flex-column align-items-center">
-                          <img class="d-block w-100" src="img/tl2.jpeg" alt="" />
-                          <span class="mt-3">Emmanuel Tang</span>
-                          <span class="">Spécialiste en Droit des Affaires</span>
-                          <hr class="mt-3" />
-                        </div>
-                        <div class="col-sm-3 d-flex flex-column align-items-center">
-                            <img class="d-block w-100" src="img/tl2.jpeg" alt="" />
-                            <span class="mt-3">Emmanuel Tang</span>
-                            <span class="">Spécialiste en Droit des Affaires</span>
-                            <hr class="mt-3" />
-                          </div>
-                  </div>
-                </section>
-
-                <footer id="footer" class="mt-5">
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="row">
-                        <div class="col-sm">
-                          <img id="logo" class="" src="" alt="" />
-                          <span></span>
-                        </div>
-                        <div class="col-sm">
-                          <p>«Luck smiles on willing hearts» 
-                            <br/> A. Einstein</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm">
-                      <span>Main Typed of Intervention</span>
-
-                    </div>
-                    <div class="col-sm">
-                      <span>Stay Connected</span>
-                      <div class="row">
-                        <span class="fas fa-phone"></span>
-                        <span>.....</span>
-                      </div>
-                      <div class="row">
-                          <span class="fas fa-phone"></span>
-                          <span>.....</span>
-                      </div>
-                        <div class="row">
-                            <span class="fas fa-phone"></span>
-                            <span>.....</span>
-                          </div>
-                        <div class="row my-3">
-                          <a class="mx-2" href="#">
-                            <span class="fab fa-facebook"></span>
-                          </a>
-                          <a class="mx-2" href="#">
-                              <span class="fab fa-twitter"></span>
-                            </a>
-                        </div>
-                      </div>
                   </div>
                   <div class="row justify-content-center">
-                    <span>TANG @ All rights reserved</span>
+                    <a href="#" class="btn btn-outline-primary cbtn">More about TANG Law Firm</a>
                   </div>
-                </footer>
+        </div>
+      </section>
+<!--
+  Services Area
+-->
+      <section id="services" class="mt-5">
+        <div class="left-image"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6"></div>
+              <div class="col-sm-6">
+                <h2 class="helping-serv">We are hear to provide legal help</h2>
+                <p>At TANG Law Firm, we are aiming to provide high quality legal consultancy,
+                   support and results for your legal issues. 
+                </p>
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="service-content">
+                      <span class="fas fa-gavel"></span>
+                      <h3>Get Your Legal Advice</h3>
+                      <p>Post your question and get legal advice directly
+                         from our experienced lawyers, We are here to help you.
+                      </p>
+                    </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="service-content">
+                            <span class="fas fa-users"></span>
+                            <h3>Work With Experts Lawyers</h3>
+                            <p>Our lawyers are experts in all law fields,
+                               They will obtain the best results they could achieve.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <div class="service-content">
+                                  <span class="fas fa-money-bill-alt"></span>
+                                  <h3>Have Great Payment Rates</h3>
+                                  <p>If TANG LAw Firm accept your case, 
+                                      we will consensually decide of the fees with your.
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <div class="service-content">
+                                  <span class="fas fa-globe"></span>
+                                  <h3>Get International Consulting</h3>
+                                  <p>TANG Law Firm operates together with
+                                      a network of international Lawyers and
+                                      Consultants.
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+                      
+                    </div>
+                  </div>
+        </div>
+      </section>
+      <!--
+        Practive Area
+      -->
+      <section id="practice-area" class="">
+        <div class="container">
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <div class="title-area">
+                          <h3>Want Help</h3>
+                          <h2>Domains of Intervention</h2>
+                          <p>At TANG Law Firm, we have got a wide range of legal services.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="title-area-btn">
+                          <a href="#" class="btn btn-outline-primary cbtn ml-auto">View All...</a>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="row no-gutters">
+                    <div class="col-lg col-md-4">
+                        <div class="pract-area">
+                            <span class="fas fa-briefcase"></span>
+                            <span class="pract-line"></span>
+                            <h3>Business Law</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg col-md-4">
+                        <div class="pract-area">
+                            <span class="fas fa-user-shield"></span>
+                            <span class="pract-line"></span>
+                            <h3>Social Law </h3>
 
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg col-md-4">
+                        <div class="pract-area">
+                            <span class="fas fa-shield-alt"></span>
+                            <span class="pract-line"></span>
+                            <h3>Insurance Law</h3>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg col-md-4">
+                        <div class="pract-area">
+                            <span class="fas fa-balance-scale"></span>
+                            <span class="pract-line"></span>
+                            <h3>Criminal Law</h3>
+                            
+                        </div>
+                    </div>
+                    
+                  </div>
+        </div>
+      </section>
+      <!--
+        Main Interventions
+      -->
+      <section id="main-intervention" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="title-area">
+                    <h3>Our Specialites</h3>
+                    <h2>Main Interventions</h2>
+                    <p>At TANG Law Firm, we have certain types of intervention in which we are specialised.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          <div class="row mb-3">
+            <div class="col-sm">
+              <div class="interv-items">
+                <h3>
+                  Consulting
+                  <span>01.</span>
+                </h3>
+                <p>We offer you legal domiciliation,
+                    we Offer  you oral or written consultations
+                    on all legal issues...
+                </p>
+              </div>
+              <div class="w-100"></div>
+              <div class="interv-items">
+                  <h3>
+                    Litigations
+                    <span>02.</span>
+                  </h3>
+                  <p>Assists or represents you before of
+                      all national jurisdictions. egularly keeps you abreast with the
+                      evolution of your procedures...
+                  </p>
+                </div>
             </div>
-      </main>
+            <div class="col-sm">
+                <div class="interv-items">
+                    <h3>
+                      Debts Recovery
+                      <span>03.</span>
+                    </h3>
+                    <p>We recovery your depts throuht amicable or judicial
+                        means.
+                    </p>
+                  </div>
+                <div class="w-100"></div>
+                <div class="interv-items">
+                    <h3>
+                      Arbritation - ADR
+                      <span>04.</span>
+                    </h3>
+                    <p>We have a solid experience in in International
+                        Arbitration and other
+                        Alternatives
+                        Disputes
+                        Resolutions.
+                    </p>
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <div class="interv-items">
+                      <h3>
+                          Restricted  or Opened Tender
+                          Consultations
+                        <span>05.</span>
+                      </h3>
+                      <p>TANG Law Firm has already been involved in
+                          several important consultations.
+                      </p>
+                    </div>
+                  <div class="w-100"></div>
+                  <div class="interv-items">
+                      <h3>
+                          Seminars
+                        <span>06.</span>
+                      </h3>
+                      <p>The Firm organises and participates in seminars
+                          on various legal themes.
+                      </p>
+                    </div>
+                </div>
+          </div>
+          <div class="row justify-content-center">
+            <divc class="">
+                <a href="#" class="btn btn-outline-primary cbtn">More about our main Interventions</a>
+            </div>  
+          </div>
+        </div>
+      </section>
+      <!--
+        Team
+      -->
+      <section id="team" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="title-area">
+                    <h3>Our Legal Team</h3>
+                    <h2>Meet our Attorneys</h2>
+                    <p>We have choosed our lawyers and legal advisors taking into account their
+                       experience and ability to handle all cases.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="title-area-btn">
+                    <a href="#" class="btn btn-outline-primary cbtn ml-auto">View All...</a>
+                  </div>
+                </div>
+            </div>
+                <div class="row">
+                  <div class="col-sm t-i">
+                    <div class="team-items">
+                      <img class="img-fluid" src="img/tl2.jpeg" alt="" />
+                      <div class="team-items-content">
+                        <span class="team-name">Me Emmanuel Tang</span>
+                        <span class="team-title">Spécialiste en Droit des Affaires</span>
+                        
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="col-sm">
+                      <div class="team-items">
+                        <img class="img-fluid" src="img/tl2.jpeg" alt="" />
+                        <div class="team-items-content">
+                          <span class="team-name">Me Daniel Joseph BIKAÏ BI BIKAÏ</span>
+                          <span class="team-title">Spécialiste en Droit des Contrats et Contrats Publics</span>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="team-items">
+                          <img class="img-fluid" src="img/tl2.jpeg" alt="" />
+                          <div class="team-items-content">
+                            <span class="team-name">Me KOUMAÏ BOUBA</span>
+                            <span class="team-title">pécialiste en Droit Processuel
+                                Civil, Social et Pénal</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                          <div class="team-items">
+                            <img class="img-fluid" src="img/tl2.jpeg" alt="" />
+                            <div class="team-items-content">
+                              <span class="team-name">Me Marie-Thérèse TANG - NDOMBO</span>
+                              <span class="team-title">Maîtrise Droit des Affaires</span>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                  </div>
+        </div>
+      </section>            
+    </main>
+    <!--
+      Footer
+    -->
+    <footer id="footer" class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="ft-first-content">
+              <div class="ft-logo">
+                  <img src="img/tanglogo.png" alt="tang logo" />
+                <span></span>
+              </div>
+              <div class="ft-content-title">
+                <p>
+                  "Luck smiles on willing hearts"
+                </p> 
+                <p>Albert Einstein</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <span class="ft-h">Main Typed of Intervention</span>
+            <ul>
+              <li>
+                  <span>Consulting</span>
+              </li>
+              <li>
+                  <span>Litigations</span>
+              </li>
+              <li>
+                  <span>Debts  Recovery</span>
+              </li>
+              <li>
+                  <span>Arbitration - ADR</span>
+              </li>
+              <li>
+                  <span>Restricted  or Opened Tender
+                      Consultations</span>
+              </li>
+              <li>
+                  <span>Seminars</span>
+              </li>
+              
+            </ul>
+
+          </div>
+          <div class="col-sm ft-con">
+            <span class="ft-h">Stay Connected</span>
+            <div class="row ftc">
+              <span class="fas fa-phone"></span>
+              +237 222 221 136
+            </div>
+            <div class="row ftc">
+                <span class="fas fa-envelope"></span>
+                tanglawfirm@tang-lawfirm.net
+            </div>
+              <div class="row ftc">
+                  <span class="fas fa-home"></span>
+                  B.P. 20061 Yaoundé
+                </div>
+              <div class="row">
+                <div class="ft-social">
+                <a class="" href="#">
+                  <span class="fab fa-facebook"></span>
+                </a>
+                <a class="" href="#">
+                    <span class="fab fa-twitter"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="ft-end">
+            <span>TANG Law Firm @ All rights reserved</span>
+          </div>
+        </div>
+      </div>
+    </footer>
     
     
 
